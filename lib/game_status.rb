@@ -56,6 +56,7 @@ def winner(board)
       winner = "X"
     elsif board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O"
       winner = "O"
-    end
+    end  
+  end
   winner
 end
