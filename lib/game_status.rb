@@ -24,7 +24,7 @@ def won?(board)
     end
   end
   if winner == true
-    true
+    return win_combination
   elsif winner == false
     false
   end
