@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-
+winning_combination = false
 def won?(board)
   winning_combination = false
   winner = false
