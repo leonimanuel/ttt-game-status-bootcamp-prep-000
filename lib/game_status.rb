@@ -43,4 +43,3 @@ def draw?
     true
   end
 end
-  
