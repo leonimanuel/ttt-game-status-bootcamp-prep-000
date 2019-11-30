@@ -58,5 +58,9 @@ def winner(board)
       winner = "O"
     end
   end
-  winner
+  if !!winner
+    winner
+  else
+    nil
+  end
 end
