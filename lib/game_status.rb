@@ -14,7 +14,8 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
-dog = "good"
+
+winning_combination = false
 def won?(board)
   winner = false
   winning_combination = false
