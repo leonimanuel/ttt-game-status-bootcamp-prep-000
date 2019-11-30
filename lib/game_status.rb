@@ -15,7 +15,6 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-winning_combination = false
 def won?(board)
   winning_combination = false
   winner = false
@@ -26,10 +25,8 @@ def won?(board)
       break
     end
   end
-  if winner == true
-    return winning_combination
-  elsif winner == false
-    false
+  if !!winning_combination
+    winning_combination
   end
 end
 
