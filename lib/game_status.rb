@@ -31,3 +31,9 @@ def won?(board)
     false
   end
 end
+
+def full?(board)
+  if board.none? {|space| i == 0}
+    true
+  end
+end
