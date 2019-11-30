@@ -15,8 +15,9 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-winning_combination = false
+
 def won?(board)
+  winning_combination = false
   winner = false
   WIN_COMBINATIONS.each do |win_combination|
     if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X" || board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O"
