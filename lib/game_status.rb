@@ -25,8 +25,10 @@ def won?(board)
       break
     end
   end
-  if !!winning_combination
-    winning_combination
+  if winner == true
+    return winning_combination
+  elsif winner == false
+    false
   end
 end
 
