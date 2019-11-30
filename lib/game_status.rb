@@ -50,9 +50,12 @@ def over?(board)
 end
 
 def winner(board)
-  if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X"
-    "X"
-  elsif board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O"
-    "O"
-  end
+  winner = false
+  WIN_COMBINATIONS.each do |win_combination|
+    if board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X"
+      winner = "X"
+    elsif board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O"
+      winner = "O"
+    end
+  winner
 end
